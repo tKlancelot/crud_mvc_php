@@ -17,7 +17,7 @@
         <a href="index.php?controller=default&&action=home">
             <button type='submit' class="btn btn-secondary mt-2 mb-2">retour</button>
         </a>
-        <h4 class="text-uppercase text-success   border rounded p-1 font-italic">ajouter un contact</h4>
+            <h4 class="text-uppercase text-secondary border rounded p-1">ajouter un contact</h4>
         <form class="form" method="post" action="index.php?controller=contact&action=addContact">
             <div class="form-group">
                 <label for="name">nom</label>
@@ -25,11 +25,11 @@
             </div>
             <div class="form-group">
                 <label for="tel">téléphone</label>
-                <input class="form-control" type="tel" name="tel" id="tel" placeholder="telephone">
+                <input class="form-control" type="tel" name="tel" id="tel" minlength="8" maxlength="10" placeholder="telephone" pattern="[0-9]{10}">
             </div>
             <div class="form-group">
                 <label for="mail">e-mail</label>
-                <input class='form-control' type="mail" name="mail" id="mail" placeholder="jean.rachid@gmail.com">
+                <input class='form-control' type="email" name="mail" id="mail" placeholder="jean.rachid@gmail.com">
             </div>
             <div class="form-group">
                 <input class='btn btn-primary' type="submit" value="ajouter">

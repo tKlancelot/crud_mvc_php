@@ -18,19 +18,19 @@
     <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-primary  mt-2 mb-2 text-uppercase"><i class="far fa-plus-square"></i></button>
     </a>
         <a class='pl-2' href="#">
-    <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-info  mt-2 mb-2 text-uppercase"><i class="fas fa-info-circle"></i></button>
+    <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-secondary  mt-2 mb-2 text-uppercase"><i class="fas fa-info-circle"></i></button>
     </a>
         <a class='pl-2' href="#">
     <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-danger  mt-2 mb-2 text-uppercase">
         <?php
-        $count = new ContactManager();
-        echo $count->count();
+        echo $data->count();
         ?>
     </button>
     </a>
 
     </div>
-    <h4 class="text-uppercase text-success border rounded p-1 font-italic">ma liste de contacts</h4>
+    <h4 class="text-uppercase text-secondary border rounded p-1">ma liste de contacts</h4>
+<!--    font-italic-->
     <div>
         <table class="table border rounded">
         <thead class="text-uppercase">
