@@ -15,7 +15,9 @@
 <div class="col-9 border border-info mt-5">
     <div class="d-flex justify-content-around border rounded mt-2 mb-2">
     <a class='pl-2' href="../tp_open/index.php?controller=contact&&action=addForm">
-    <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-primary  mt-2 mb-2 text-uppercase"><i class="far fa-plus-square"></i></button>
+    <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-primary  mt-2 mb-2 text-uppercase">
+        <i class="far fa-plus-square"></i>
+    </button>
     </a>
         <a class='pl-2' href="#">
     <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-secondary  mt-2 mb-2 text-uppercase"><i class="fas fa-info-circle"></i></button>
@@ -39,6 +41,7 @@
                 <th>name</th>
                 <th>tel</th>
                 <th>mail</th>
+                <th>picture</th>
                 <th colspan="3">options</th>
             </tr>
         </thead>
@@ -48,6 +51,7 @@
                 <td><?=$contact->getName();?></td>
                 <td><?=$contact->getTel();?></td>
                 <td><?=$contact->getMail();?></td>
+                <td width="10%"><img width=50% height=40px src="assets/<?=$contact->getPicture();?>"</td>
                 <td class="lead"><a href="../tp_open/index.php?controller=contact&action=delete&id=<?php echo $contact->getId()?>"><i class="fas fa-trash"></i></a></td>
                 <td class="lead"><a href="../tp_open/index.php?controller=contact&action=updateForm&id=<?php echo $contact->getId()?>"><i class="far fa-edit"></i></a></td>
                 <td class="lead"><a title="voir les details" href="../tp_open/index.php?controller=contact&action=displayOne&id=<?php echo $contact->getId()?>"><i class="fas fa-info-circle"></i></a></td>

@@ -11,7 +11,7 @@
             $contacts = [];
             $sql = 'SELECT * FROM myContacts';
             foreach ($this->bdd->query($sql) as $row){
-                $contacts[] = new Contact($row['id'],$row['name'],$row['tel'],$row['mail']);
+                $contacts[] = new Contact($row['id'],$row['name'],$row['tel'],$row['mail'],$row['picture']);
             }
             return $contacts;
         }
@@ -21,10 +21,12 @@
             $name = $contact->getName();
             $tel = $contact->getTel();
             $mail = $contact->getMail();
-            $req = $this->bdd->prepare("INSERT INTO myContacts (name, tel, mail) VALUES (?,?,?)");
+            $picture = $contact->getPicture();
+            $req = $this->bdd->prepare("INSERT INTO myContacts (name, tel, mail, picture) VALUES (?,?,?,?)");
             $req->bindParam(1, $name);
             $req->bindParam(2, $tel);
             $req->bindParam(3, $mail);
+            $req->bindParam(4, $picture);
             $req->execute();
             $contact->setId($this->bdd->lastInsertId());
         }
@@ -35,7 +37,7 @@
             $req->bindParam(1, $id);
             $req->execute();
             $res = $req->fetch();
-            $contact = new Contact($res['id'], $res['name'], $res['tel'], $res['mail']);
+            $contact = new Contact($res['id'], $res['name'], $res['tel'], $res['mail'],$res['picture']);
 
             return $contact;
         }
@@ -54,12 +56,14 @@
             $name = $contact->getName();
             $tel = $contact->getTel();
             $mail = $contact->getMail();
+            $picture = $contact->getPicture();
             $id = $contact->getId();
-            $req = $this->bdd->prepare("UPDATE myContacts SET name = ?, tel = ?, mail = ? WHERE id = ?");
+            $req = $this->bdd->prepare("UPDATE myContacts SET name = ?, tel = ?, mail = ?, picture = ? WHERE id = ?");
             $req->bindParam(1,$name);
             $req->bindParam(2,$tel);
             $req->bindParam(3,$mail);
-            $req->bindParam(4,$id);
+            $req->bindParam(4,$picture);
+            $req->bindParam(5,$id);
             $req->execute();
         }
 

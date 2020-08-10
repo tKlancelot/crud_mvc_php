@@ -10,7 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e59e543-c926-477d-bee0-b7003ef7f5d5" name="Default Changelist" comment="" />
+    <list default="true" id="4e59e543-c926-477d-bee0-b7003ef7f5d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/ContactManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ContactManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/insertForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/insertForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/stylesheet.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/stylesheet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/updateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/updateForm.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +31,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1frCWcUUjBSNvwzWKgOo0gwJL9t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,7 +55,8 @@
       <updated>1596966858335</updated>
       <workItem from="1596966860583" duration="5779000" />
       <workItem from="1596974945628" duration="1457000" />
-      <workItem from="1596976417591" duration="28925000" />
+      <workItem from="1596976417591" duration="30359000" />
+      <workItem from="1597063258705" duration="3217000" />
     </task>
     <servers />
   </component>
@@ -64,13 +76,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="264" width="430" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1597064335523">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="740" y="264" width="430" height="586" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1597064335523" />
     <state x="778" y="476" width="354" height="162" key="NewPhpFileDialog" timestamp="1597052017572">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="778" y="476" width="354" height="162" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597052017572" />
-    <state x="613" y="169" width="992" height="737" key="SettingsEditor" timestamp="1596978467922">
+    <state x="613" y="169" width="992" height="737" key="SettingsEditor" timestamp="1597063538486">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="613" y="169" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1596978467922" />
+    <state x="613" y="169" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1597063538486" />
   </component>
 </project>

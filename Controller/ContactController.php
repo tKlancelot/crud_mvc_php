@@ -7,7 +7,7 @@ class ContactController{
 
     public function InsertOnSubmit()
     {
-        $contact = new Contact(null, $_POST['name'], $_POST['tel'], $_POST['mail']);
+        $contact = new Contact(null, $_POST['name'], $_POST['tel'], $_POST['mail'],$_POST['picture']);
         $contactManager = new ContactManager();
         $contactManager->insert($contact);
         header('Location: /tp_open/index.php?controller=default&action=home');
@@ -38,7 +38,7 @@ class ContactController{
     {
         $contactManager = new ContactManager();
         $contact = $contactManager->select($id);
-        $contact = new Contact($id,$_POST['name'], $_POST['tel'], $_POST['mail']);
+        $contact = new Contact($id,$_POST['name'], $_POST['tel'], $_POST['mail'], $_POST['picture']);
         $contactManager->update($contact);
 
         header('Location: /tp_open/index.php?controller=default&action=home');

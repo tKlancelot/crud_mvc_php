@@ -32,6 +32,10 @@
                 <input class='form-control' type="email" name="mail" id="mail" placeholder="jean.rachid@gmail.com">
             </div>
             <div class="form-group">
+                <label for="picture">photo</label>
+                <input class='form-control' type="file" name="picture" id="picture">
+            </div>
+            <div class="form-group">
                 <input class='btn btn-primary' type="submit" value="ajouter">
             </div>
         </form>

@@ -5,12 +5,16 @@ class Contact{
     private $name; 
     private $tel; 
     private $mail;
-    
-    public function __construct($id,$name,$tel,$mail){
+    private $picture;
+
+
+
+    public function __construct($id,$name,$tel,$mail,$picture){
         $this->id = $id;
         $this->name = $name;
         $this->tel = $tel;
         $this->mail = $mail;
+        $this->picture = $picture;
     }
 
     /**
@@ -91,6 +95,22 @@ class Contact{
         $this->mail = $mail;
 
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPicture()
+    {
+        return $this->picture;
+    }
+
+    /**
+     * @param mixed $picture
+     */
+    public function setPicture($picture)
+    {
+        $this->picture = $picture;
     }
 }
 

@@ -36,6 +36,12 @@ include ('stylesheet.html');
         </div>
 
         <div class="form-group">
+        <label for="picture">photo</label>
+            <input type="text" readonly value="<?php echo $contact->getPicture()?>"/>
+        <input type="file" name="picture" id="picture" class="form-control"/>
+        </div>
+
+        <div class="form-group">
         <input class="btn btn-success" type="submit" value="valider">
         </div>
     </form>
