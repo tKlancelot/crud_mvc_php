@@ -21,7 +21,12 @@
     <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-info  mt-2 mb-2 text-uppercase"><i class="fas fa-info-circle"></i></button>
     </a>
         <a class='pl-2' href="#">
-    <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-danger  mt-2 mb-2 text-uppercase"><i class="fas fa-info-circle"></i></button>
+    <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-danger  mt-2 mb-2 text-uppercase">
+        <?php
+        $count = new ContactManager();
+        echo $count->count();
+        ?>
+    </button>
     </a>
 
     </div>

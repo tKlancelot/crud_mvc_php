@@ -62,6 +62,13 @@
             $req->bindParam(4,$id);
             $req->execute();
         }
+
+        public function count(){
+            $count = $this->bdd->query('SELECT COUNT(*) AS nb FROM myContacts');
+            $res = $count->fetch();
+            $nb = $res['nb'];
+            return $nb;
+        }
     }
 
 ?>
