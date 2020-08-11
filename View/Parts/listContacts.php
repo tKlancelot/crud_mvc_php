@@ -1,5 +1,5 @@
 
-<div class="bg-white">
+<div class="bg-white scroller">
     <table class="table border rounded">
     <thead class="text-uppercase text-light">
         <tr>
