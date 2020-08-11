@@ -38,7 +38,6 @@
             $req->execute();
             $res = $req->fetch();
             $contact = new Contact($res['id'], $res['name'], $res['tel'], $res['mail'],$res['picture']);
-
             return $contact;
         }
 
@@ -48,8 +47,6 @@
             $req->bindParam(1,$id);
             $req->execute();
         }
-
-
 
         public function update(Contact $contact)
         {
@@ -66,6 +63,7 @@
             $req->bindParam(5,$id);
             $req->execute();
         }
+
 
 //        public function update($id)
 //        {

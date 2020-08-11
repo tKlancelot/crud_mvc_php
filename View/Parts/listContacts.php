@@ -1,6 +1,6 @@
 <div>
     <table class="table border rounded">
-    <thead class="text-uppercase">
+    <thead class="text-uppercase text-light">
         <tr>
             <th>id</th>
             <th>

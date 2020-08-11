@@ -31,17 +31,40 @@
     /*    padding:0.4rem;*/
     /*    margin:0;*/
     /*}*/
-
-    table tr:hover, table tr:hover i{
-        color:dodgerblue;
+    thead{
+        background:linear-gradient(45deg,mediumblue,dodgerblue,mediumblue);
+    }
+    th{
+        padding-top:0!important;
+        padding-bottom:0!important;
+        letter-spacing: 0.1rem;
     }
 
+    table tr:hover{
+        color:mediumblue;
+    }
+    table tr:hover th{
+        color:whitesmoke;
+    }
+    table tr th i{
+        color:white;
+        padding-bottom:0.2rem;
+        padding-left:0.2rem;
+        padding-right:0.2rem;
+        border:2px solid transparent;
+        border-radius: 16%;
+    }
+    table tr th i:hover{
+        color:greenyellow;
+        border:2px solid greenyellow;
+    }
     .tri:hover{
         text-decoration: none;
-        background:yellow;
+        /*background:yellow;*/
         border-radius:4%;
     }
     i{
         opacity:0.8;
     }
+
 </style>
