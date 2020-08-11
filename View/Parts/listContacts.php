@@ -4,12 +4,14 @@
         <tr>
             <th>id</th>
             <th>
-                <a href="../tp_open/index.php?controller=default&action=orderBy"><span>name&emsp;</span><i class="fas fa-caret-down"></i></a>
+                <span>name&emsp;</span>
+                &emsp;<a class='tri' href="../tp_open/index.php?controller=default&action=orderBy"><i class="fas fa-caret-down"></i></a>
+                &emsp;<a class='tri' href="../tp_open/index.php?controller=default&action=orderByDesc"><i class="fas fa-caret-up"></i></a>
             </th>
             <th>tel</th>
             <th>mail</th>
             <th>picture</th>
-            <th colspan="3">options</th>
+            <th class="text-center" colspan="3">options</th>
         </tr>
     </thead>
     <tbody>

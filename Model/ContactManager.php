@@ -82,10 +82,30 @@
             foreach ($this->bdd->query($sql) as $row){
                 $contacts[] = new Contact($row['id'],$row['name'],$row['tel'],$row['mail'],$row['picture']);
             }
-//            var_dump($contacts);
+
 //            var_dump($contacts);
             return $contacts;
+        }
 
+        public function orderByDesc(){
+            $contacts = [];
+            $sql = 'SELECT * FROM myContacts ORDER BY name DESC';
+            foreach ($this->bdd->query($sql) as $row){
+                $contacts[] = new Contact($row['id'],$row['name'],$row['tel'],$row['mail'],$row['picture']);
+            }
+
+//            var_dump($contacts);
+            return $contacts;
+        }
+
+        public function getColor($data){
+            if ($data >= 0 && $data < 10){
+                $color = 'orange';
+            }
+            else if ($data >= 10){
+                $color = 'red';
+            }
+            return $color;
         }
     }
 

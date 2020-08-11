@@ -34,8 +34,11 @@ else if($_GET['controller'] === 'contact' && $_GET['action'] === 'updateContact'
 }
 else if($_GET['controller'] === 'default' && $_GET['action'] === 'orderBy'){
     $defaultController = new DefaultController();
-    $defaultController->home();
-    $defaultController->orderByName();
+    $defaultController->orderByNameAsc();
+}
+else if($_GET['controller'] === 'default' && $_GET['action'] === 'orderByDesc'){
+    $defaultController = new DefaultController();
+    $defaultController->orderByNameDesc();
 }
 else{
     throw new Exception('la page demandée n\'existe pas', 404);
