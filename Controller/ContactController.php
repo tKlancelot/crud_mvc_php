@@ -83,10 +83,10 @@ class ContactController{
         }
     }
 
-    public function getStringRandom(){
-        $contactManager = new ContactManager();
-        echo $contactManager->stringRandom();
-    }
+//    public function getStringRandom(){
+//        $contactManager = new ContactManager();
+//        echo $contactManager->stringRandom();
+//    }
 }
 
 ?>

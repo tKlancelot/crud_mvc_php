@@ -1,12 +1,13 @@
 <?php
     include ('stylesheet.html');
-    function stringRandom($length=8){
+    function stringRandom($length=5){
     $chars = 'abcdefghijklmnopqrstuvwxyz';
     $string = '';
     for($i=0; $i<$length; $i++){
         $string .= $chars[rand(0, strlen($chars)-1)];
     }
-    return $string;
+    return mb_convert_encoding($string, "UTF-8");
+
 }
 ?>
 <!doctype html>
@@ -21,15 +22,15 @@
 <body>
 
     <div class="d-flex justify-content-center">
-        <div class="col-9 border rounded mt-5">
+        <div class="cadre col-9 bg-light">
         <a href="index.php?controller=default&&action=home">
             <button type='submit' class="btn btn-secondary mt-2 mb-2">retour</button>
         </a>
-            <h4 class="text-uppercase text-secondary border rounded p-1">ajouter un contact</h4>
+            <h4 class="text-uppercase border rounded">ajouter un contact</h4>
         <form class="form" method="post" action="index.php?controller=contact&action=addContact">
             <div class="form-group">
                 <label for="name"><i class="fas fa-id-badge"></i>&emsp;nom</label>
-                <input class='form-control' type="text" name="name" id="name" placeholder="nom du contact" value="<?= stringRandom(8)?>">
+                <input class='form-control' type="text" name="name" id="name" placeholder="nom du contact" value="<?= stringRandom(4)?>">
             </div>
             <div class="form-group">
                 <label for="tel"><i class="fas fa-phone-square-alt"></i>&emsp;téléphone</label>

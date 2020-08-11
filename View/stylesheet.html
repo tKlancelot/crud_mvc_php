@@ -1,19 +1,39 @@
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Luckiest+Guy&family=Mukta&family=Nunito&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Viga&display=swap');
+
+      body{
+        /*background-image:url(../assets/wallpaper1.jpg);*/
+        background-image:url('https://image.freepik.com/free-vector/white-squares-background_23-2147508967.jpg');
+        /*background-image:url('https://ak.picdn.net/shutterstock/videos/162730/thumb/1.jpg');*/
+        background-size: cover;
+    }
+
+    .cadre{
+        border: 1px solid royalblue;
+        border-image: linear-gradient(dodgerblue,lightskyblue,mediumblue) 48;
+        margin-top:8%;
+    }
 
     *{
-        font-family:'Mukta';
+        font-family:'Nunito';
     }
     h4{
-        font-family:'Rowdies';
         text-transform: uppercase;
-        font-weight:300;
-        letter-spacing:0.1rem;
+        /*font-weight:300;*/
+        letter-spacing:0.2rem;
+        font-family:'Luckiest Guy';
+        font-size:1.3rem;
+        text-align: center;
+        padding-top: 0.7rem;
+        color:royalblue;
+        opacity: 0.7;
     }
     .btn{
         font-size:1rem;
@@ -40,9 +60,22 @@
         letter-spacing: 0.1rem;
     }
 
+    .table{
+        margin-bottom:0;
+    }
     table tr:hover{
         color:dodgerblue;
     }
+    .table td:hover{
+        border-bottom:1px solid dodgerblue!important;
+        /*transition-property:border;*/
+        transition:0.4s;
+    }
+
+    .table{
+        text-align:center;
+    }
+
     table tr:hover th{
         color:whitesmoke;
     }
@@ -58,7 +91,10 @@
         border:2px solid transparent;
         /*padding:0.2rem;*/
     }
-
+    .table tr td, .table tr td i{
+        padding:0;
+        line-height:2.4rem;
+    }
     table tr th i:hover{
         border:2px solid lawngreen;
     }

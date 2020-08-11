@@ -11,10 +11,9 @@
     <title>home</title>
 </head>
 <body>
-<div class="d-flex justify-content-center">
-
-<div class="col-9 border border-primary rounded mt-5">
-    <div class="d-flex justify-content-around border rounded mt-2 mb-2">
+<div id='test' class="d-flex justify-content-center">
+<div class="cadre col-9 bg-light p-2">
+    <div class="d-flex justify-content-around bg-light border rounded">
     <a class='pl-2' href="../tp_open/index.php?controller=contact&&action=addForm">
     <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-primary  mt-2 mb-2 text-uppercase">
         <i class="far fa-plus-square"></i>
@@ -32,7 +31,7 @@
     </a>
 
     </div>
-    <h4 class="text-uppercase text-secondary border rounded p-1">ma liste de contacts</h4>
+    <h4 class="text-uppercase border border-primary border-left-0 border-top-0 border-right-0 bg-light">ma liste de contacts</h4>
 <!--    font-italic-->
     <?php
     include ('Parts/listContacts.php');

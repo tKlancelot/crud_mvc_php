@@ -13,11 +13,11 @@ include ('stylesheet.html');
 <body>
 <div class="d-flex justify-content-center">
 
-<div class="col-9 border rounded mt-5">
+<div class="cadre col-9 bg-light">
     <a href="../tp_open/index.php?controller=default&action=home">
         <button class="btn btn-secondary p-1 mt-2 mb-2 text-uppercase">retour</button>
     </a>
-    <h4 class="text-uppercase text-secondary border rounded p-1">modifier le contact <?php echo $contact->getName();?></h4>
+    <h4 class="text-uppercase border rounded">modifier le contact <?php echo $contact->getName();?></h4>
 
     <form method="post" action="index.php?controller=contact&action=updateContact&id=<?php echo $contact->getId()?>">
         <div class="form-group">
