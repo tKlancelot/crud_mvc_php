@@ -67,6 +67,21 @@
             $req->execute();
         }
 
+//        public function update($id)
+//        {
+//            $contactManager = new ContactManager();
+//            $contact = $contactManager->select($id);
+//
+//
+//            $contact->setName($_POST['name']);
+//            $contact->setMail($_POST['mail']);
+//            $contact->setTel($_POST['tel']);
+//            $contact->setPicture($_POST['picture']);
+//            $contactManager->update($contact);
+//
+//            header('Location: index.php?controller=default&action=home');
+//        }
+
         public function count(){
             $count = $this->bdd->query('SELECT COUNT(*) AS nb FROM myContacts');
             $res = $count->fetch();
