@@ -1,5 +1,6 @@
 <?php
     include ('stylesheet.html');
+
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
 <body>
 <div class="d-flex justify-content-center">
 
-<div class="col-9 border border-success rounded mt-5">
+<div class="col-9 border border-primary rounded mt-5">
     <div class="d-flex justify-content-around border rounded mt-2 mb-2">
     <a class='pl-2' href="../tp_open/index.php?controller=contact&&action=addForm">
     <button style="border-radius:50%;width:50px;height:50px;font-size:1.4rem;" type='submit' class="btn btn-primary  mt-2 mb-2 text-uppercase">

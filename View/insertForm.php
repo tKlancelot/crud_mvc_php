@@ -1,5 +1,13 @@
 <?php
     include ('stylesheet.html');
+    function stringRandom($length=8){
+    $chars = 'abcdefghijklmnopqrstuvwxyz';
+    $string = '';
+    for($i=0; $i<$length; $i++){
+        $string .= $chars[rand(0, strlen($chars)-1)];
+    }
+    return $string;
+}
 ?>
 <!doctype html>
 <html lang="fr">
@@ -21,7 +29,7 @@
         <form class="form" method="post" action="index.php?controller=contact&action=addContact">
             <div class="form-group">
                 <label for="name"><i class="fas fa-id-badge"></i>&emsp;nom</label>
-                <input class='form-control' type="text" name="name" id="name" placeholder="nom du contact" required>
+                <input class='form-control' type="text" name="name" id="name" placeholder="nom du contact" value="<?= stringRandom(8)?>">
             </div>
             <div class="form-group">
                 <label for="tel"><i class="fas fa-phone-square-alt"></i>&emsp;téléphone</label>
@@ -42,6 +50,20 @@
                 <input class='btn btn-primary' type="submit" value="ajouter">
             </div>
         </form>
+            <?php
+            if (isset($errors)){
+            ?>
+            <div class="text-danger">
+            <h4 class="text-uppercase border rounded p-1 small">liste des erreurs</h4>
+                <ul>
+                    <?php
+                        foreach ($errors as $error){
+                            echo '<li><div class="alert alert-danger" role="alert">'.$error.'</alert></div></li>';
+                        }
+                    }
+                    ?>
+                </ul>
+            </div>
     </div>
 </div>
 </body>

@@ -45,6 +45,20 @@ include ('stylesheet.html');
         <input class="btn btn-success" type="submit" value="valider">
         </div>
     </form>
+    <?php
+    if (isset($errors)){
+    ?>
+    <div class="text-danger">
+        <h4 class="text-uppercase border rounded p-1 small">liste des erreurs</h4>
+        <ul>
+            <?php
+            foreach ($errors as $error){
+                echo '<li><div class="alert alert-warning" role="alert">'.$error.'</alert></div></li>';
+            }
+            }
+            ?>
+        </ul>
+    </div>
 </div>
 </div>
 </body>
