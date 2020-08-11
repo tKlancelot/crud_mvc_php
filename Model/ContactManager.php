@@ -73,6 +73,20 @@
             $nb = $res['nb'];
             return $nb;
         }
+
+
+        public function orderBy()
+        {
+            $contacts = [];
+            $sql = 'SELECT * FROM myContacts ORDER BY name';
+            foreach ($this->bdd->query($sql) as $row){
+                $contacts[] = new Contact($row['id'],$row['name'],$row['tel'],$row['mail'],$row['picture']);
+            }
+//            var_dump($contacts);
+//            var_dump($contacts);
+            return $contacts;
+
+        }
     }
 
 ?>

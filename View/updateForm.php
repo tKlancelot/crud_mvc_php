@@ -38,7 +38,7 @@ include ('stylesheet.html');
         <div class="form-group">
         <label for="picture">photo</label>
             <input type="text" readonly value="<?php echo $contact->getPicture()?>"/>
-        <input type="file" name="picture" id="picture" class="form-control"/>
+        <input type="file" name="picture" id="picture" class="form-control p-1"/>
         </div>
 
         <div class="form-group">

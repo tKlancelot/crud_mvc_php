@@ -33,7 +33,7 @@
             </div>
             <div class="form-group">
                 <label for="picture">photo</label>
-                <input class='form-control' type="file" name="picture" id="picture">
+                <input class='form-control p-1' type="file" name="picture" id="picture">
             </div>
             <div class="form-group">
                 <input class='btn btn-primary' type="submit" value="ajouter">

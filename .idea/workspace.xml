@@ -12,8 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4e59e543-c926-477d-bee0-b7003ef7f5d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/ContactManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ContactManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/insertForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/insertForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/stylesheet.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/stylesheet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/updateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/updateForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -49,7 +55,7 @@
       <workItem from="1596966860583" duration="5779000" />
       <workItem from="1596974945628" duration="1457000" />
       <workItem from="1596976417591" duration="30359000" />
-      <workItem from="1597063258705" duration="5813000" />
+      <workItem from="1597063258705" duration="15610000" />
     </task>
     <servers />
   </component>
@@ -73,10 +79,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="740" y="264" width="430" height="586" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1597064335523" />
-    <state x="778" y="476" width="354" height="162" key="NewPhpFileDialog" timestamp="1597052017572">
+    <state x="778" y="476" width="354" height="162" key="NewPhpFileDialog" timestamp="1597129535723">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="778" y="476" width="354" height="162" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597052017572" />
+    <state x="778" y="476" width="354" height="162" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597129535723" />
     <state x="613" y="169" width="992" height="737" key="SettingsEditor" timestamp="1597063538486">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

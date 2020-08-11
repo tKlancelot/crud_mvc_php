@@ -10,4 +10,10 @@ class DefaultController{
         require ('View/home.php');
     }
 
+    public function orderByName(){
+        $contactManager = new ContactManager();
+        $contacts = $contactManager->selectAll();
+        $contacts = $contactManager->orderBy();
+    }
 }
+
